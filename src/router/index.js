@@ -65,6 +65,23 @@ const router = createRouter({
       path:'/:id/editrole',
       name:'editrole',
       component: () => import('../components/EditRoles.vue')
+    },
+    
+    {
+      path:'/contacts',
+      name:'contacts',
+      component: () => import('../components/Contacts.vue')
+    },
+    {
+      path:'/addcontacts',
+      name:'addcontacts',
+      component: () => import('../components/AddContacts.vue')
+    }
+    ,
+    {
+      path:'/:id/editcontacts',
+      name:'editcontacts',
+      component: () => import('../components/EditContacts.vue')
     }
    
   ]
